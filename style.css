@@ -1,0 +1,73 @@
+body {
+  background-color: #0b1f37;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #fedd00;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #005ea7;
+}
+
+tr:nth-child(even) {
+  background-color: #1d4e8c;
+}
+
+tr:nth-child(odd) {
+  background-color: #2b659f;
+}
+
+.position-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.goal-shooter-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/shooting-target.png");
+}
+
+.goal-attack-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/basketball-hoop.png");
+}
+
+.wing-attack-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/flying-bird.png");
+}
+
+.centre-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/basketball-player.png");
+}
+
+.wing-defence-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/protective-shield.png");
+}
+
+.goal-defence-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/medieval-helmet.png");
+}
+
+.goal-keeper-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/soccer-goalkeeper.png");
+}
+
+.extra-icon {
+  background-image: url("https://img.icons8.com/color/48/000000/plus.png");
+}
