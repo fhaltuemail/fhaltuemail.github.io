@@ -13,9 +13,9 @@ body {
 
 /* Set container max width */
 .container {
-  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  width: 100%;
 }
 
 /* Style the heading */
