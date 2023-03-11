@@ -3,7 +3,6 @@
 <head>
 	<title>Netball Team Picker</title>
 	<script src="netball.js"></script>
-	<link rel="stylesheet" href="style.css"></link>
 	<style>
 		table {
 			border-collapse: collapse;
@@ -18,10 +17,10 @@
 	<h1>Netball Team Picker</h1>
 
 	<div>
-		<label for="playerName">Player name:</label>
-    <input type="text" id="playerName" placeholder="Enter player name..." onkeydown="if (event.keyCode === 13) addPlayer()">
+		<label for="playerName" class="player-name">Player name:</label>
+    <input type="text" class="textbox" id="playerName" placeholder="Enter player name..." onkeydown="if (event.keyCode === 13) addPlayer()">
 
-		<button onclick="addPlayer()">Add player</button>
+		<button onclick="addPlayer()" class="btn">Add player</button>
 	</div>
 
 	<table id="playerTable">
@@ -36,9 +35,8 @@
 	</table>
 
 	<div>
-		<button onclick="assignPositions()">Assign positions</button>
-		<button onclick="randomizePositions()">Re-randomize positions</button>
-    <button onclick="sendEmail()">Send email</button>
+		<button onclick="assignPositions()" class="btn assign-btn">Assign positions</button>
+    <button onclick="sendEmail()" class=btn>Send email</button>
 
 	</div>
 
@@ -57,9 +55,7 @@
     "Goal Keeper",
     "Extra 1",
     "Extra 2",
-    "Extra 3",
-    "Extra 4",
-    "Extra 5"
+    "Extra 3"
 ];
     
 	</script>
