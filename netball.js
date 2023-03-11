@@ -94,7 +94,7 @@ function shuffleArray(array) {
 	}
 }
 
-function sendEmail2() {
+function sendEmail() {
   // Get the list of players
   let playerList = document.getElementById("playerTable");
 
@@ -113,7 +113,7 @@ function sendEmail2() {
   
 }
 
-function sendEmail() {
+function sendEmail2() {
   // Get the list of players
   let playerList = document.getElementById("playerTable");
 
