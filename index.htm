@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Netball Team Picker</title>
+	<script src="netball.js"></script>
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 10px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Netball Team Picker</h1>
+
+	<div>
+		<label for="playerName">Player name:</label>
+    <input type="text" id="playerName" placeholder="Enter player name..." onkeydown="if (event.keyCode === 13) addPlayer()">
+
+		<button onclick="addPlayer()">Add player</button>
+	</div>
+
+	<table id="playerTable">
+		<thead>
+			<tr>
+				<th>Player name</th>
+				<th>Position</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<div>
+		<button onclick="assignPositions()">Assign positions</button>
+		<button onclick="randomizePositions()">Re-randomize positions</button>
+    <button onclick="sendEmail()">Send email</button>
+
+	</div>
+
+	<script>
+		// Initialize the player and position arrays
+		var players = [];
+		var positions1 = ["GS", "GA", "WA", "C", "WD", "GD", "GK","Extra1","Extra2","Extra3","Extra4","Extra5"];
+    
+ var positions = [
+    "Goal Shooter",
+    "Goal Attack",
+    "Wing Attack",
+    "Centre",
+    "Wing Defence",
+    "Goal Defence",
+    "Goal Keeper",
+    "Extra 1",
+    "Extra 2",
+    "Extra 3",
+    "Extra 4",
+    "Extra 5"
+];
+    
+	</script>
+</body>
+</html>
