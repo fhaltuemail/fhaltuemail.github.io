@@ -1,68 +1,145 @@
-./* Global styles */
-
-html {
+/* Reset styles */
+* {
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
 }
 
+/* Set body background color and font */
+body {
+  background-color: #F4D03F;
+  font-family: Arial, sans-serif;
+}
+
+/* Set container max width */
 .container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Style the heading */
 h1 {
-  font-size: 2.5rem;
   text-align: center;
-  margin-top: 0;
+  font-size: 48px;
+  color: #1E8449;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+/* Style the netball icon */
+.netball-icon {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  background-image: url("https://i.imgur.com/Z5LMBOI.png");
+  background-size: cover;
+  background-position: center;
 }
 
+/* Style the button */
 .btn {
   display: block;
   width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
   padding: 10px;
+  margin-bottom: 10px;
+  border: none;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
   color: #fff;
-  background-color: #006699;
-  text-decoration: none;
+  background-color: #1E8449;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+/* Style the input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Change button background color on hover */
 .btn:hover {
-  background-color: #005580;
+  background-color: #117A65;
 }
 
-/* Mobile styles */
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
-  
-  p {
-    font-size: 1rem;
-  }
-  
-  .btn {
-    font-size: 1rem;
-    max-width: 200px;
-  }
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
+
+/* Style table header cells */
+th {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* Style table body cells */
+td {
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the "Assign Position" button */
+.assign-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #1E8449;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change "Assign Position" button background color on hover */
+.assign-btn:hover {
+  background-color: #117A65;
+}
+
+/* Style the "Randomise Positions" button */
+.randomise-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #1E8449;
+  }
+  
+  .player-name {
+    font-size:20px;
+    font-weight:bold;
+  }
+  .textbox {
+    height:50px;
+  }
