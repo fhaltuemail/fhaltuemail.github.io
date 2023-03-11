@@ -1,73 +1,68 @@
+./* Global styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: #0b1f37;
-  color: #ffffff;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
-  color: #fedd00;
+  font-size: 2.5rem;
   text-align: center;
+  margin-top: 0;
 }
 
-table {
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.btn {
+  display: block;
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-th, td {
-  border: 1px solid #ffffff;
+  max-width: 300px;
+  margin: 0 auto;
   padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
   text-align: center;
+  color: #fff;
+  background-color: #006699;
+  text-decoration: none;
 }
 
-th {
-  background-color: #005ea7;
+.btn:hover {
+  background-color: #005580;
 }
 
-tr:nth-child(even) {
-  background-color: #1d4e8c;
-}
+/* Mobile styles */
 
-tr:nth-child(odd) {
-  background-color: #2b659f;
-}
-
-.position-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-.goal-shooter-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/shooting-target.png");
-}
-
-.goal-attack-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/basketball-hoop.png");
-}
-
-.wing-attack-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/flying-bird.png");
-}
-
-.centre-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/basketball-player.png");
-}
-
-.wing-defence-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/protective-shield.png");
-}
-
-.goal-defence-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/medieval-helmet.png");
-}
-
-.goal-keeper-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/soccer-goalkeeper.png");
-}
-
-.extra-icon {
-  background-image: url("https://img.icons8.com/color/48/000000/plus.png");
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    max-width: 200px;
+  }
 }
